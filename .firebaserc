@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "unicoins-55169",
+    "log": "unicoins-55169"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

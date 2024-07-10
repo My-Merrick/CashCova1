@@ -1,0 +1,155 @@
+.spin2win-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f2f4f8;
+}
+
+.wheel-container {
+  position: relative;
+  width: 300px; /* Adjust wheel container size */
+  height: 300px; /* Adjust wheel container size */
+  margin-bottom: 2rem;
+}
+
+.wheel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transition: transform 5s ease-in-out; /* Adjust spin animation duration */
+}
+
+.wheel-segment {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 3rem; /* Adjust line height based on wheel size */
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    50% 0%,
+    85% 10%,
+    100% 50%,
+    85% 90%,
+    50% 100%,
+    15% 90%,
+    0% 50%,
+    15% 10%
+  );
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #000; /* Adjust arrow color */
+  transform: translate(-50%, -50%) rotate(90deg); /* Adjust arrow orientation */
+}
+
+.game-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.balance {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.bet-amount {
+  width: 200px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.predictions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.prediction {
+  margin: 0.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.prediction.selected {
+  border: 2px solid #000; /* Adjust selected prediction border */
+}
+
+.spin-button {
+  padding: 1rem 2rem;
+  background-color: #000; /* Adjust spin button background color */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.spin-button.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.spin-button:hover {
+  background-color: #333; /* Adjust spin button hover background color */
+}
+
+/* Segment colors and specific styling */
+.segment-0 {
+  background-color: #f44336; /* Adjust segment color */
+  color: #fff; /* Adjust text color */
+}
+
+.segment-1 {
+  background-color: #ff9800; /* Adjust segment color */
+  color: #fff; /* Adjust text color */
+}
+
+.segment-2 {
+  background-color: #ffc107; /* Adjust segment color */
+  color: #000; /* Adjust text color */
+}
+
+.segment-3 {
+  background-color: #4caf50; /* Adjust segment color */
+  color: #fff; /* Adjust text color */
+}
+
+.segment-4 {
+  background-color: #2196f3; /* Adjust segment color */
+  color: #fff; /* Adjust text color */
+}
+
+.segment-5 {
+  background-color: #9c27b0; /* Adjust segment color */
+  color: #fff; /* Adjust text color */
+}
+
+.segment-6 {
+  background-color: #e91e63; /* Adjust segment color */
+  color: #fff; /* Adjust text color */
+}

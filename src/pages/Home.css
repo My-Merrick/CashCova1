@@ -1,0 +1,300 @@
+/* General Styles */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: #1a202c;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/* Flexbox Styling */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* Withdrawal Proof Styling */
+.withdrawal-proof-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.withdrawal-proof-card {
+  display: inline-block;
+  margin-right: 1rem;
+  animation: float-left 10s linear infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+.withdrawal-proof-card:hover {
+  transform: scale(1.05);
+}
+
+@keyframes float-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Text Styling */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-green-500 {
+  color: #48bb78;
+}
+
+.text-blue-500 {
+  color: #4299e1;
+}
+
+/* Background and Shadow Styling */
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-gray-900 {
+  background-color: #1a202c;
+}
+
+.bg-gray-800 {
+  background-color: #2d3748;
+}
+
+.bg-green-500 {
+  background-color: #48bb78;
+}
+
+.bg-blue-500 {
+  background-color: #4299e1;
+}
+
+.bg-red-500 {
+  background-color: #f56565;
+}
+
+.bg-green-700 {
+  background-color: #2f855a;
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+/* Padding and Margin */
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+/* Border Radius */
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+/* Box Shadow */
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional Styles */
+.balance {
+  display: flex;
+  align-items: center;
+}
+
+.withdrawal-proof-container {
+  display: flex;
+  overflow-x: auto;
+  margin-right: -20px;
+}
+
+.withdrawal-proof-card {
+  min-width: 250px;
+  margin-right: 20px;
+  animation: moveRightToLeft 30s linear infinite;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.flex.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.withdrawal-proof-card {
+  max-width: 300px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.withdrawal-proof-card:hover {
+  transform: translateX(-20px);
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: flex-start;
+  padding: 1rem;
+}
+
+.withdrawal-proof-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.withdrawal-proof-card {
+  display: inline-block;
+  margin-right: 1rem;
+  animation: float-left 10s linear infinite;
+}
+
+@keyframes float-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: white;
+}

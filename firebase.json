@@ -1,0 +1,28 @@
+{
+  "hosting": {
+    "public": "allcoins",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  },
+  "functions": {
+    "source": "functions",
+    "ignore": [
+      "node_modules",
+      ".git",
+      "firebase-debug.log",
+      "firebase-debug.*.log",
+      "*.local"
+    ],
+    "rewrites": [
+      {
+        "source": "/verifyPaystackPayment",
+        "function": "verifyPaystackPayment"
+      }
+    ]
+  }
+}

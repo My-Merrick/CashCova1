@@ -1,0 +1,88 @@
+.game-background {
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.game-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.game-container:hover {
+  transform: scale(1.02);
+}
+
+.game-title {
+  color: orange;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.bet-button {
+  margin: 1rem;
+  box-shadow: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.bet-button.selected {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+  transform: scale(1.05);
+}
+
+.place-bet-button {
+  margin-top: 20px;
+  background-color: lightGreen;
+  transition: background-color 0.3s ease;
+}
+
+.place-bet-button:hover {
+  background-color: darkGreen;
+}
+
+.bet-message {
+  margin-top: 10px;
+  animation: fadeIn 0.5s;
+}
+
+.bet-history-title {
+  margin-top: 20px;
+  color: orange;
+}
+
+.bet-history-table-container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.bet-history-table-container:hover {
+  transform: scale(1.01);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,41 @@
+/* Add this CSS to Game.css */
+.game-container {
+  background-image: url("../../assets/background2.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.balance-container {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.roulette-table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.1rem;
+  background-color: #388e3c; /* Green background for the table */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.roulette-table button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.roulette-table button:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Slight darkening effect on hover */
+}
