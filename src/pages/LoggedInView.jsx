@@ -112,7 +112,7 @@ const LoggedInView = () => {
                 component={Link}
                 to="/withdrawal-component"
               >
-                Withdrawal
+                Withdraw
               </Button>
             </Box>
           </Paper>
