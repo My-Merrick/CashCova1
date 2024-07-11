@@ -164,7 +164,7 @@ const Dashboard = () => {
   };
 
   const copyReferralLink = () => {
-    const referralLink = `http://localhost:5173/signup?ref=${userData.referralCode}`;
+    const referralLink = `https://cash-cova.vercel.app/signup?ref=${userData.referralCode}`;
     navigator.clipboard
       .writeText(referralLink)
       .then(() => {
@@ -255,12 +255,12 @@ const Dashboard = () => {
               <p className="flex items-center mb-4 text-lg">
                 <strong>Referral Link:</strong>{" "}
                 <a
-                  href={`http://localhost:5173/signup?ref=${userData.referralCode}`}
+                  href={`https://cash-cova.vercel.app/signup?ref=${userData.referralCode}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 underline"
                 >
-                  http://localhost:5173/signup?ref={userData.referralCode}
+                  https://cash-cova.vercel.app/signup?ref={userData.referralCode}
                 </a>
                 <FiCopy
                   className="ml-2 cursor-pointer"
