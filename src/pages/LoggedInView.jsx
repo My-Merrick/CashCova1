@@ -156,9 +156,9 @@ const LoggedInView = () => {
                 Dashboard
               </Button>
 
-              <Button variant="outlined" component={Link} to="/trade">
+{/*               <Button variant="outlined" component={Link} to="/trade">
                 Trade
-              </Button>
+              </Button> */}
             </Box>
             <SupportIcon />
           </Paper>
