@@ -57,7 +57,7 @@ const Navbar = () => {
   const menuItems = [
     { text: "Home", path: "/" },
     { text: "Dashboard", path: "/dashboard" },
-    { text: "BotMarket", path: "/bot" },
+    // { text: "BotMarket", path: "/bot" },
     { text: "Games", path: "/games" },
     { text: "Admin", path: "/adminPanel" },
   ];
