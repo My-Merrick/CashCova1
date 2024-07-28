@@ -22,11 +22,11 @@ import Draw from "./pages/Draw";
 import Game from "./pages/Game";
 import WithdrawalComponent from "./pages/WithdrawalComponent";
 import AdminWithdrawalPanel from "./pages/AdminWithdrawalPanel";
-import TradingView from "./components/TradingView";
-import StakingComponent from "./components/StakingComponent";
-import Header from "./components/Header";
-import WalletOverview from "./components/WalletOverview";
-import Trading from "./pages/Trading";
+// import TradingView from "./components/TradingView";
+// import StakingComponent from "./components/StakingComponent";
+// import Header from "./components/Header";
+// import WalletOverview from "./components/WalletOverview";
+// import Trading from "./pages/Trading";
 
 // import DepositComponent from "./pages/DepositComponent";
 
@@ -56,11 +56,11 @@ const App = () => {
         <Route path="/gamez" element={<Game />} />
         <Route path="/withdrawal-component" element={<WithdrawalComponent />} />
         <Route path="/adminPanel" element={<AdminWithdrawalPanel />} />
-        <Route path="/trading" element={<TradingView />} />
-        <Route path="/staking" element={<StakingComponent />} />
-        <Route path="/wallet" element={<WalletOverview />} />
-        <Route path="/header" element={<Header />} />
-        <Route path="/trade" element={<Trading />} />
+{/*         <Route path="/trading" element={<TradingView />} /> */}
+{/*         <Route path="/staking" element={<StakingComponent />} /> */}
+{/*         <Route path="/wallet" element={<WalletOverview />} /> */}
+{/*         <Route path="/header" element={<Header />} /> */}
+{/*         <Route path="/trade" element={<Trading />} /> */}
         {/* <Route path="depo" element={<DepositComponent />} /> */}
       </Routes>
     </Router>
